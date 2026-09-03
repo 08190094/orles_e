@@ -1,0 +1,385 @@
+/* ==============================
+   PEDRO & ORLEIDYS
+   Estilo elegante y minimalista
+   ============================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600&family=Poppins:wght@300;400;500;600&display=swap');
+
+
+/* ---------- GENERAL ---------- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #fffafa, #ffffff, #fff6f8);
+    color: #3d3035;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* ---------- CONTENEDOR PRINCIPAL ---------- */
+
+.app {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 45px 20px 25px;
+}
+
+
+/* ---------- ENCABEZADO ---------- */
+
+.header {
+    text-align: center;
+    margin-bottom: 35px;
+}
+
+.small-title {
+    font-size: 11px;
+    letter-spacing: 4px;
+    color: #c9a45c;
+    margin-bottom: 8px;
+}
+
+.header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    font-weight: 500;
+    color: #3d3035;
+}
+
+.header h1 span {
+    color: #d9a0ae;
+    font-weight: 400;
+}
+
+.subtitle {
+    margin-top: 6px;
+    font-size: 13px;
+    color: #9d8c91;
+    font-weight: 300;
+}
+
+
+/* ---------- ZONA DEL JUEGO ---------- */
+
+.game {
+    width: 100%;
+    max-width: 650px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* ---------- RULETA ---------- */
+
+.roulette-container {
+    position: relative;
+    width: 340px;
+    height: 340px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Ruleta */
+
+.roulette {
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    border: 8px solid #d8b76b;
+
+    background:
+        conic-gradient(
+            #f6dfe5 0deg 45deg,
+            #fff 45deg 90deg,
+            #f6dfe5 90deg 135deg,
+            #fff 135deg 180deg,
+            #f6dfe5 180deg 225deg,
+            #fff 225deg 270deg,
+            #f6dfe5 270deg 315deg,
+            #fff 315deg 360deg
+        );
+
+    box-shadow:
+        0 10px 30px rgba(180, 140, 150, 0.18),
+        inset 0 0 0 2px rgba(255,255,255,0.8);
+
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    transition: transform 5s cubic-bezier(0.15, 0.75, 0.2, 1);
+}
+
+
+/* Centro de la ruleta */
+
+.roulette-center {
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    border: 3px solid #d8b76b;
+
+    box-shadow:
+        0 5px 15px rgba(0, 0, 0, 0.08);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    z-index: 5;
+}
+
+.roulette-center span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    color: #c39a4d;
+    font-weight: 600;
+}
+
+
+/* ---------- INDICADOR ---------- */
+
+.pointer {
+    position: absolute;
+
+    top: 5px;
+
+    width: 0;
+    height: 0;
+
+    border-left: 12px solid transparent;
+    border-right: 12px solid transparent;
+    border-top: 24px solid #c99b4e;
+
+    z-index: 10;
+
+    filter: drop-shadow(0 3px 3px rgba(0,0,0,0.12));
+}
+
+
+/* ---------- TARJETA DE PREGUNTA ---------- */
+
+.question-card {
+    width: 100%;
+    margin-top: 25px;
+
+    padding: 25px 30px;
+
+    background: rgba(255,255,255,0.9);
+
+    border: 1px solid #f0dfe3;
+
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow:
+        0 10px 30px rgba(180, 140, 150, 0.10);
+}
+
+
+/* Quién responde */
+
+.answer-label {
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: #c49b51;
+    margin-bottom: 12px;
+}
+
+.answer-label strong {
+    color: #c98294;
+}
+
+
+/* Pregunta */
+
+.question {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    line-height: 1.5;
+    color: #45363b;
+    margin-bottom: 20px;
+}
+
+
+/* ---------- BOTÓN LISTO ---------- */
+
+.ready-button {
+    border: none;
+
+    padding: 10px 25px;
+
+    border-radius: 30px;
+
+    background: #f6dfe5;
+
+    color: #8f5968;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.ready-button:hover {
+    background: #edcbd3;
+    transform: translateY(-1px);
+}
+
+
+/* ---------- CONTADOR ---------- */
+
+.counter {
+    margin-top: 18px;
+
+    font-size: 12px;
+
+    color: #a6949a;
+}
+
+.counter #remaining {
+    color: #c49b51;
+    font-weight: 600;
+}
+
+
+/* ---------- BOTONES ---------- */
+
+.controls {
+    display: flex;
+    gap: 12px;
+
+    margin-top: 22px;
+}
+
+
+.spin-button,
+.restart-button {
+
+    border-radius: 30px;
+
+    padding: 12px 25px;
+
+    font-family: 'Poppins', sans-serif;
+
+    font-size: 12px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+/* Girar */
+
+.spin-button {
+
+    border: none;
+
+    background: #d9a0ae;
+
+    color: white;
+
+    font-weight: 500;
+
+    box-shadow:
+        0 5px 15px rgba(210, 150, 165, 0.25);
+}
+
+.spin-button:hover {
+    background: #ce8f9e;
+    transform: translateY(-2px);
+}
+
+
+/* Reiniciar */
+
+.restart-button {
+
+    border: 1px solid #d8b76b;
+
+    background: white;
+
+    color: #b08a43;
+}
+
+.restart-button:hover {
+    background: #fffaf0;
+}
+
+
+/* ---------- PIE ---------- */
+
+footer {
+    margin-top: auto;
+    padding-top: 35px;
+
+    font-family: 'Playfair Display', serif;
+
+    font-size: 13px;
+
+    color: #c8a4ad;
+}
+
+
+/* ---------- RESPONSIVE ---------- */
+
+@media (max-width: 500px) {
+
+    .app {
+        padding-top: 30px;
+    }
+
+    .header h1 {
+        font-size: 34px;
+    }
+
+    .roulette-container {
+        width: 290px;
+        height: 290px;
+    }
+
+    .roulette {
+        width: 265px;
+        height: 265px;
+    }
+
+    .question-card {
+        padding: 22px 18px;
+    }
+
+    .question {
+        font-size: 19px;
+    }
+
+    .controls {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .spin-button,
+    .restart-button {
+        width: 100%;
+    }
+}
+

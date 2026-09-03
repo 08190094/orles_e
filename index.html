@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pedro & Orleidys</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <!-- ENCABEZADO -->
+        <header class="header">
+            <p class="small-title">UNA RONDA ENTRE DOS</p>
+            <h1>Pedro <span>&</span> Orleidys</h1>
+            <p class="subtitle">Una pregunta a la vez...</p>
+        </header>
+
+
+        <!-- RULETA -->
+        <section class="game">
+
+            <div class="roulette-container">
+
+                <!-- Indicador superior -->
+                <div class="pointer"></div>
+
+                <!-- Ruleta -->
+                <div class="roulette" id="roulette">
+
+                    <div class="roulette-center">
+                        <span>GIRAR</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- INFORMACIÓN DE LA PREGUNTA -->
+            <div class="question-card" id="questionCard">
+
+                <p class="answer-label" id="answerLabel">
+                    Responde: <strong>—</strong>
+                </p>
+
+                <p class="question" id="question">
+                    Gira la ruleta para comenzar
+                </p>
+
+                <button class="ready-button" id="readyButton">
+                    ✓ Listo
+                </button>
+
+            </div>
+
+
+            <!-- CONTADOR -->
+            <div class="counter">
+                <span id="remaining">8</span>
+                <span> preguntas restantes</span>
+            </div>
+
+
+            <!-- CONTROLES -->
+            <div class="controls">
+
+                <button class="spin-button" id="spinButton">
+                    Girar ruleta
+                </button>
+
+                <button class="restart-button" id="restartButton">
+                    Iniciar de nuevo
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- PIE -->
+        <footer>
+            <p>El misterio es la cosa más bonita que podemos experimentar</p>
+        </footer>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
