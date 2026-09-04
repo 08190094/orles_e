@@ -11,44 +11,30 @@ const STORAGE_KEY = "pedroOrleidysRoulette";
 const allQuestions = [
     {
         id: 1,
-        question: "¿Quién crees que extraña más al otro?",
-        responder: "Orleidys"
+        question: "¿Comó querrias que fuera vuestra primera vez juntos, haciendo el amor. Sé detallista?",
+        responder: "Pedro"
     },
     {
         id: 2,
-        question: "¿Qué es lo que más te gusta físicamente de mí?",
+        question: "¿cuantás veces te tocas al dia pensando en tu pareja?",
         responder: "Pedro"
     },
     {
         id: 3,
-        question: "¿Cuál sería el sitio ideal para hacer el amor?",
+        question: "¿Que seria lo mas dificil de resistir, las ganas de besarme o mantener la calma mientras te toco?",
         responder: "Orleidys"
     },
     {
         id: 4,
-        question: "¿Podrías pasar un día sin escribirme?",
-        responder: "Pedro"
+        question: "¿te gustaría probar algo novedoso con tu pareja?. Pon dos ejemplos",
+        responder: "Orleidys"
     },
     {
         id: 5,
-        question: "¿Qué harías si mañana pudiéramos vernos?",
+        question: "¿sí pudieras elegir una fantasia para cumplirla conmigo cuando nos veamos, cual escogerias?",
         responder: "Pedro"
-    },
-    {
-        id: 6,
-        question: "¿Qué hago, aunque sea a distancia, que te hace sentir más cerca de mí?",
-        responder: "Orleidys"
-    },
-    {
-        id: 7,
-        question: "Si mañana pudiéramos pasar 24 horas juntos, ¿qué sería lo primero que harías conmigo?",
-        responder: "Pedro"
-    },
-    {
-        id: 8,
-        question: "¿Qué crees que debemos cuidar especialmente para que nuestra relación siga fuerte?",
-        responder: "Orleidys"
     }
+  
 ];
 
 
